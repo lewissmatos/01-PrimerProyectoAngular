@@ -1,0 +1,36 @@
+<div class="animated fadeIn fast mt-3">
+
+    <div>
+        <h1>{{ heroe.nombre | uppercase}}</h1>
+        <h6>({{ heroe.aparicion | date: 'y'}})</h6>
+    </div>
+    <br><br>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <img [src]=" heroe.img " alt="" class="img-fluid">
+
+            <br><br>
+
+            <a class="btn btn-outline-danger w-100" routerLink="/heroes">Volver...</a>
+        </div>
+
+
+        <div class=" col-md-8 ">
+            <div style="margin-left: 20px">
+                <h3>
+                    <b>
+                    {{heroe.nombre}}
+                </b>
+                </h3>
+                <br>
+                <h4>{{heroe.bio}}</h4>
+                <br>
+                <h3><b>Casa: {{heroe.casa}}</b></h3>
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,14 @@
+<div class="container mt-4 animated fadeIn fast">
+
+    <h3>Busqueda de: {{ termino }}
+
+    </h3>
+    <br>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 animated fadeIn fast ">
+        <app-heroe-tarjeta *ngFor="let heroe of heroes let i = index" [heroe]="heroe" [index]="i">
+
+        </app-heroe-tarjeta>
+    </div>
+
+</div>
